@@ -1,0 +1,5 @@
+vscode设置自动补全标签
+zai设置中添加：
+"emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+}
