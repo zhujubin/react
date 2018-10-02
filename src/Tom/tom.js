@@ -1,0 +1,1 @@
+import './tom.css'
