@@ -3,3 +3,6 @@ zai设置中添加：
 "emmet.includeLanguages": {
     "javascript": "javascriptreact"
 }
+
+组件：组件的返回值只能有一个根元素。这也是我们要用一个<div>来包裹所有<Welcome />元素的原因。
+
