@@ -2,9 +2,15 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import SearchDemo from './searchDemo'
+import Clock from './clock'
+import Conditional from './conditional'
  //函数组件
  const Welcom = <h1>helllo name</h1>
+
 class App extends Component {
+  constructor(props){
+    super(props);
+  }
   render() {
   //列表渲染
     const list = [1,2,3,4,5,6];
@@ -88,7 +94,14 @@ class App extends Component {
             To get started, edit <code>src/App.js</code> and save to reload.
           </p>
           <All />
-          <SearchDemo/>
+          {/* <SearchDemo/> */}
+        </div>
+        {/* <div>
+          <Clock/>
+        </div> */}
+
+        <div>
+          <Conditional/>
         </div>
       </div>
     );
