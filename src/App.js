@@ -4,6 +4,10 @@ import './App.css';
 import SearchDemo from './searchDemo'
 import Clock from './clock'
 import Conditional from './conditional'
+import Form from './form'
+import Textarea from './textarea'
+import Boiling from './statePromotion'
+import Child from './propschildren'
  //函数组件
  const Welcom = <h1>helllo name</h1>
 
@@ -102,6 +106,19 @@ class App extends Component {
 
         <div>
           <Conditional/>
+        </div>
+        <div>
+          <div style={{'color':'red'}}>form</div>
+          <Form></Form>
+        </div>
+        <div>
+          <Textarea></Textarea>
+        </div>
+        <div>
+          <Boiling></Boiling>
+        </div>
+        <div>
+          <Child></Child>
         </div>
       </div>
     );
