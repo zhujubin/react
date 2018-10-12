@@ -8,6 +8,9 @@ import Form from './form'
 import Textarea from './textarea'
 import Boiling from './statePromotion'
 import Child from './propschildren'
+import Refs from './refs'
+import Uncontrol from './uncontrolform'
+import Context from './context'
  //函数组件
  const Welcom = <h1>helllo name</h1>
 
@@ -119,6 +122,15 @@ class App extends Component {
         </div>
         <div>
           <Child></Child>
+        </div>
+        <div>
+          <Refs/>
+        </div>
+        <div>
+          <Uncontrol/>
+        </div>
+        <div>
+          <Context/>
         </div>
       </div>
     );

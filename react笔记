@@ -59,3 +59,27 @@ state:
     4：阻止组建渲染返回 null
  
 表单控件：使用空间中的value 和 setState进行与输入的值保持同步
+
+JSX 会移除空行和开始与结尾处的空格。标签邻近的新行也会被移除，字符串常量内部的换行会被压缩成一个空格
+    可以使用数组的形式返回多行元素
+
+&&& :你不能在函数式组件上使用 ref 属性，因为它们没有实例
+
+何时使用 Refs:
+    下面是几个适合使用 refs 的情况：
+
+    处理焦点、文本选择或媒体控制。
+    触发强制动画。
+    集成第三方 DOM 库
+
+    注意：如果可以通过声明式实现，则尽量避免使用 refs
+
+ref的值取决于节点的类型:
+    当 ref 属性被用于一个普通的 HTML 元素时，React.createRef() 将接收底层 DOM 元素作为它的 current 属性以创建 ref 。
+    当 ref 属性被用于一个自定义类组件时，ref 对象将接收该组件已挂载的实例作为它的 current 。
+
+访问refs:
+    const node = this.myRef.current
+
+创建 ref 存储 textInput DOM 元素:
+    this.textInput = React.createRef()
